@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ap-was-container
-          image: 882157583740.dkr.ecr.ap-northeast-2.amazonaws.com/seoul-repository:348a549
+          image: 882157583740.dkr.ecr.ap-northeast-2.amazonaws.com/seoul-repository:9d942da
           ports:
             - containerPort: 8080
           resources:
