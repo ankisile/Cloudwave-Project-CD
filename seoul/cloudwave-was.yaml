@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seoul-was-deploy
+  name: ap-was-deploy
 spec:
   replicas: 2
   selector:
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: seoul-was-alb-service
+  name: ap-was-alb-service
 spec:
   selector:
     app: was
@@ -38,7 +38,7 @@ spec:
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: seoul-was-hpa
+  name: ap-was-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
