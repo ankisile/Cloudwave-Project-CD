@@ -45,7 +45,7 @@ spec:
     kind: Deployment
     name: ap-was-deploy
   minReplicas: 2
-  maxReplicas: 10
+  maxReplicas: 50
   metrics:
   - type: Resource
     resource:
